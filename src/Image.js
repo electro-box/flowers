@@ -5,11 +5,11 @@ class Image extends React.Component {
     return (
       <div className="wrapper">
           <div className = "topbar">
-              <div className="title">Chamomile</div>
-              <div className="delete">Delete</div>           
+              <div className="title">{this.props.title}</div>
+              <div className="delete">Delete</div>
           </div>
           <div className = "image">
-              <img className = "picture" src = "./img1.jpg" alt = "lily" />
+              <img className = "picture" src = {this.props.url} alt = {this.props.title} />
           </div>
       </div>
     );
