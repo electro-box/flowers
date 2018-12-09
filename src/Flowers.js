@@ -26,7 +26,7 @@ class Flowers extends Component {
   render() {
     const newImage = [];
     for (let z = 0; z < this.state.numNew; z++) {
-        newImage.push(<Image key={z} title={this.state.title} url={this.state.url} />);      
+        newImage.push(<Image key={z} title={this.state.title} url={this.state.url} />);
     }
 
     return (<div className="wrap">
@@ -36,7 +36,7 @@ class Flowers extends Component {
       </header>
       <div className="content">
         <New onTitle={this.onTitle} onUrl={this.onUrl} onNewImage={this.onNewImage} />
-        {this.state.title && newImage}
+        {this.state.title && newImage.reverse()}
         <Image title="Chamomile" url="./img1.jpg" />
         <Image title="Flower" url="./img2.jpg" />
       </div>
