@@ -29,7 +29,8 @@ class Flowers extends Component {
         newImage.push(<Image key={z} title={this.state.title} url={this.state.url} />);
     }
 
-    return (<div className="wrap">
+    return (
+      <div className="wrap">
       <header className="header">
         <div className="circle"></div>
         <div className="inscription">Images</div>
@@ -40,7 +41,8 @@ class Flowers extends Component {
         <Image title="Chamomile" url="./img1.jpg" />
         <Image title="Flower" url="./img2.jpg" />
       </div>
-    </div>);
+    </div>
+    );
   }
 }
 

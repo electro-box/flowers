@@ -1,3 +1,4 @@
+/*CSS styles for Flowers App*/
 /* main page standart*/
 .wrap {
   background-color: rgb(255, 255, 255);
@@ -10,6 +11,19 @@
   margin-right: auto;
   margin-top: 10px;
 }
+@media only screen and (max-width: 768px) {
+.wrap {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 268px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+ }
+}
 
 .header {
   display: flex;
@@ -19,6 +33,16 @@
   align-content: center;
   align-items: stretch;
 }
+@media only screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    height: 35px;
+    width: 100%;
+    border-bottom: 1px solid rgb(125, 125, 125);
+    align-content: center;
+    justify-content: center;
+  }
+}
 
 .circle {
   margin: 1%;
@@ -26,6 +50,14 @@
   height: 35px;
   background: black;
   border-radius: 50px;
+}
+@media only screen and (max-width: 768px) {
+  .circle {
+    width: 0;
+    height: 0;
+    background: black;
+    border-radius: 0;
+  }
 }
 
 .inscription {
@@ -35,6 +67,16 @@
   text-align: center;
   font-size: 18px;
   font-weight: bold;
+}
+@media only screen and (max-width: 768px) {
+  .inscription {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
 }
 
 .content {
@@ -63,6 +105,27 @@
   padding: 0;
   outline: none;
 }
+@media only screen and (max-width: 768px) {
+  .new {
+    width: 232px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(5, 181, 27);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(5, 181, 27);
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 7px;
+    padding: 0;
+    outline: none;
+  }
+}
 
 .wrap-button-new {
   margin-top: 17px;
@@ -80,33 +143,12 @@
   width: 635px;
   margin-bottom: 6%;
 }
-
-.image {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 635px;
-  height: 315px;
-  border: 1px solid rgb(0, 0, 0);
-}
-
-.deleted {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  color: rgb(221, 35, 35);
-  font-size: 16px;
-  font-weight: 500;
-  width: 635px;
-  height: 315px;
-  z-index: 100;
-  background-color: rgba(163, 147, 147, 0.8);
-}
-
-.picture {
-  width: 100%;
-  height: 100%;
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    height: 188px;
+    width: 231px;
+    margin-bottom: 6%;
+  }
 }
 
 .topbar {
@@ -118,6 +160,18 @@
   border-top: 1px solid rgb(142, 142, 142);
   border-left: 1px solid rgb(142, 142, 142);
   border-right: 1px solid rgb(142, 142, 142);
+}
+@media only screen and (max-width: 768px) {
+  .topbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 231px;
+    height: 27px;
+    border-top: 1px solid rgb(142, 142, 142);
+    border-left: 1px solid rgb(142, 142, 142);
+    border-right: 1px solid rgb(142, 142, 142);
+  }
 }
 
 .title {
@@ -143,6 +197,44 @@
 
 .delete:hover {
   color: rgb(16, 180, 232);
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 635px;
+  height: 315px;
+  border: 1px solid rgb(0, 0, 0);
+}
+@media only screen and (max-width: 768px) {
+  .image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 231px;
+    height: 160px;
+    border: 1px solid rgb(0, 0, 0);
+  }
+}
+
+.deleted {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  color: rgb(221, 35, 35);
+  font-size: 16px;
+  font-weight: 500;
+  width: 635px;
+  height: 315px;
+  z-index: 100;
+  background-color: rgba(163, 147, 147, 0.8);
+}
+
+.picture {
+  width: 100%;
+  height: 100%;
 }
 
 /*popup standart*/
