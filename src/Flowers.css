@@ -19,7 +19,7 @@
   width: 268px;
   height: 100%;
   margin-left: auto;
-  margin-right: auto;  
+  margin-right: auto;
  }
 }
 
@@ -219,7 +219,7 @@
   align-items: center;
   width: 635px;
   height: 315px;
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid rgb(142, 142, 142);
 }
 @media only screen and (max-width: 768px) {
   .image {
@@ -228,7 +228,7 @@
     align-items: center;
     width: 231px;
     height: 160px;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgb(142, 142, 142);
   }
 }
 
@@ -335,12 +335,31 @@
   margin-top: 44px;
   margin-bottom: 30px;
 }
+@media only screen and (max-width: 768px) {
+  .head {
+    display: flex;
+    justify-content: center;
+    height: 22px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 34px;
+    margin-bottom: 30px;
+  }
+}
 
 .form {
   display: flex;
   flex-direction: column;
   width: 245px;
   height: 230px;
+}
+@media only screen and (max-width: 768px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 268px;
+    height: 260px;
+  }
 }
 
 .input-text {
@@ -372,6 +391,14 @@
   align-items: center;
   justify-content: space-between;
 }
+@media only screen and (max-width: 768px) {
+  .wrapper-form-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 .button-close {
   display: flex;
@@ -385,6 +412,22 @@
   border: 1px solid rgb(0, 0, 0);
   color: rgb(0, 0, 0);
   font-weight: bold;
+}
+@media only screen and (max-width: 768px) {
+  .button-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 227px;
+    height: 40px;
+    border-radius: 6px;
+    text-decoration: none;
+    user-select: none;
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    order: 1;
+  }
 }
 
 .button-close:active {
@@ -409,6 +452,27 @@
   font-size: 16px;
   padding: 0;
   outline: none;
+}
+@media only screen and (max-width: 768px) {
+  .button-add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 227px;
+    height: 40px;
+    border-radius: 6px;
+    text-decoration: none;
+    user-select: none;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(123, 211, 0);
+    color: rgb(123, 211, 0);
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0;
+    outline: none;
+    margin-bottom: 20px;
+    order: 0;
+  }
 }
 
 .button-add:active {
