@@ -281,6 +281,7 @@
   top: 0;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   width: 870px;
   height: 100%;
@@ -309,7 +310,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 235px;
   height: 350px;
   width: 365px;
   background-color: rgb(255, 255, 255);
@@ -318,8 +318,7 @@
   .form-bg {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 235px;
+    align-items: center;    
     height: 350px;
     width: 268px;
     background-color: rgb(255, 255, 255);
