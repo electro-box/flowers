@@ -18,8 +18,8 @@ class Image extends React.Component {
               <div className="title">{this.state.title}</div>
               <div className="delete" onClick={this.onDelete}>Delete</div>
           </div>
-          <div className = "image">
-              <img className = "picture" src = {this.state.url} alt = {this.state.title} />
+          <div className="image">
+              <img className="picture" src={this.state.url} alt={this.state.title} />
               {this.state.delete && <div className="deleted">Deleted</div>}
           </div>
       </div>
