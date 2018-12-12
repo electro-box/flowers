@@ -66,16 +66,6 @@
   font-size: 16px;
   font-weight: bold;
 }
-@media only screen and (max-width: 768px) {
-  .inscription {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    font-size: 16px;
-    font-weight: bold;
-  }
-}
 
 .content {
   display: flex;
@@ -318,8 +308,8 @@
   .form-bg {
     display: flex;
     flex-direction: column;
-    align-items: center;    
-    height: 350px;
+    align-items: center;
+    height: 330px;
     width: 268px;
     background-color: rgb(255, 255, 255);
   }
@@ -341,7 +331,7 @@
     height: 22px;
     font-weight: bold;
     font-size: 16px;
-    margin-top: 34px;
+    margin-top: 0;
     margin-bottom: 30px;
   }
 }
