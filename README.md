@@ -1,8 +1,8 @@
-# Factory line manager
+# Flowers App
 [![Travis][build-badge]][build]
 [![Coveralls][coveralls-badge]][coveralls]
 
-Awesome factory line manager!
+Created with create-react-app
 
 [build-badge]: https://img.shields.io/travis/electro-box/flowers/master.png?style=flat-square
 [build]: https://travis-ci.org/electro-box/flowers
