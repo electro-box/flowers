@@ -7,3 +7,9 @@ node_js:
 branches:
   only:
     - master
+
+deploy:
+  provider: heroku
+  app: "flowers-staging"
+  api_key:
+    secure: "0366bf26-50bc-4f67-95dc-f8a2d864e4e9"
