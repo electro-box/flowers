@@ -11,5 +11,4 @@ deploy:
   api_key:
     secure: "VBTPbIIZeIr/WhkvuuOczMeb+Yqt6ozRDzWMfE9KcGME+lQjFbS5CejaaPJTaI8aw1jOr9nFUG4u2LAtj1ojaaCTqSA8HJbly9WxLDZquAzAvK413p4q2/8kOKanPalHwTPgT/Swfk4jn6wJiufEoqonOYJkzQCYWJZu4vO7l+OQAtIjGL68usmHF2fug3cGqqYffcmA0JImdMc55Dsy351tlYXITaMUI/glMAq4LqRVm8nE4Mz5zffKhgTQDWFfk4Ra6HhT4Cy6/MnmEt5EYV7WbDa0RZ1EXrh4+iqbwFHRiak51g441X6UqjBpKMIvV3FWapZPrn7UJgdi5I0lBuU1wj0UxzY+4TNCC4cN1qhMoYNd2o15vrgiKFGID/3bd9qSN4nMHWeKwnFntyLPArd2VFuCdnS7B84yYtWWwlnoe1dQT/4Cad1fTOcnWnTgyCzLu8kBXuwNv7AXRTiM/kx2NRtSl00Gfaw5ZUrM3ByPlU2rPRsZawwgnMcwy4CK+4J7rbvmefU3CxX6w/h9W7jDMqM5BjcD/s8JM5LPtKC6TX/AKBgVuTbFb2OOflDL+uq4jRx0OKSwdmg2jiQ/+RaEAJyaqP4DecCWZkMUpaIFs982I0Hk9ETFgTU1EGECPN8KHjZJZFtvDQy/80OTxnHAlMDVDOFLsQOp6H1ItFw="
   after_success:
-  - cat ./coverage/lcov.info | ./node_modules/codecov.io/bin/codecov.io.js
-  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+  jest --coverage --coverageReporters=text-lcov | coveralls
