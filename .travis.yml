@@ -1,15 +1,13 @@
 sudo: false
-
 language: node_js
 node_js:
-  - 8
-
+- 8
 branches:
   only:
-    - master
-
+  - master
 deploy:
   provider: heroku
-  app: "flowers-staging"
-  api_key:
-    secure: "0366bf26-50bc-4f67-95dc-f8a2d864e4e9"
+  app: flowers-staging  
+env:
+  matrix:
+    secure: NL+pKNIJouH3SDGGg6T2mHUMQh79zV8wpTqR26PhQBuoCcef1X27tk2OD4d5qJB15JegSVKs/v/RLG+INFdtN2CGo+4VfP7+tZzahFQHVgjbtK+otjt7aq7y5EAxHbX1sIVahsDieb9W5s7Uol8Gsj2g0/zJywDMXfYMZL+POb2xFurItdtap12fEuPyXM8S0lwje26088CFg8srWWZjvEWCAAzoBNbLzW9ahsrdkTH1QHy0tieSFkvWU5/XapuXlS3paVyMubeX1EYXqD7F2iCmfL4JC4LIg/ld+Q8pcLTTDL4xrSU7EftEmQrcRRPiyAcKJuSIuVuVkcoRKUAYXYUa6LNCK6hxRtKTXR1vMSyGGxmg8p0aYlgtvvFfHhjrgjv/ILlMSGU7niVW58MOQCpQ/19+A+774y0h93iKqwk9NpwPU42xTBn35QVZnOMh+emJFXr7eL+I5Dbj1vzKEMqPQ4oeEeTA9QIO+4YIYlgb9CYD8v7meQldQ+8lxXhv6LZORUqCwUnQMdftrOGCVsaMhNUmBTL1BcNfauKUSnUb2wx0kKtkvkO7exJeFuvCdpv5kxgHVNJ+YidGotWgHlmqqKzfyfic+doerhiEXxeV4kbush/t73tOjUwFAtUsSSzHnR9WTAnaOF19K8pvTZsvHfcRCkgJWn8CtaUXU7U=
